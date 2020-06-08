@@ -1,1 +1,7 @@
-body{background: white; margin: 0; padding: 0;}
+body{background: white; margin: 0; padding: 0; font-family: Roboto, sans-serif;}
+a{text-decoration: none;}
+#header{margin: 0; padding: 0; background: rgb(41, 41, 41); width: 100%; height: 45px;}
+.title{float: left; color: white; padding: 10px; font-weight: 300; font-size: 17px;}
+.navigation{float: right}
+.navigation li{float: left; list-style: none; margin-right: 10px; margin-top: -5px;}
+.navigation ul li a{color: white;font-weight: 300;font-size: 17px;}
