@@ -11,7 +11,7 @@
          var data=JSON.parse(xhttp.responseText);
          data.forEach(function(element) {
       // document.getElementById("demo").innerHTML +="<br>Category : " + element["completions"][0]["result"][0]["value"]["polygonlabels"] + ", " + element["completions"][0]["result"][1]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][2]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][3]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][4]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][5]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][6]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][7]["value"]["polygonlabels"] + "<br>Link : " + element["data"]["image"] + "<br> Test : " + "element" + "<br><br>";
-      document.getElementById("demo").innerHTML +="Link : " + "<img src='" + element["data"]["image"] + "' alt='image'>" + "<br><br>";
+      document.getElementById("demo").innerHTML +="<img src='" + element["data"]["image"] + "' alt='image'>";
 
     });
       }
