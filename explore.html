@@ -12,7 +12,7 @@
                 var data=JSON.parse(xhttp.responseText);
                 data.forEach(function(element) {
                     // document.getElementById("demo").innerHTML +="<br>Category : " + element["completions"][0]["result"][0]["value"]["polygonlabels"] + ", " + element["completions"][0]["result"][1]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][2]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][3]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][4]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][5]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][6]["value"]["polygonlabels"] +  ", " + element["completions"][0]["result"][7]["value"]["polygonlabels"] + "<br>Link : " + element["data"]["image"] + "<br> Test : " + "element" + "<br><br>";
-                    document.getElementById("demo").innerHTML +="<img src='" + element["data"]["image"] + "' alt='image'>";
+                    document.getElementById("demo").innerHTML +="<div class="panel"><img src='" + element["data"]["image"] + "' alt=''></div>";
 
                 });
             }
@@ -24,13 +24,32 @@
 </head>
 <body>
     <div id="navigation">
-        <h1>SEGA</h1>
+       <h1>Explore Alam</h1>
         <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">etc</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about-us.html">about-us</a></li>
+            <li><a href="faq.html">faq</a></li>
         </ul>
     </div>
-<!-- <p id="demo"><img src="img/pict1.jpeg" alt=""><img src="img/pict2.jpeg" alt=""><img src="img/pict3.jpeg" alt=""><img src="img/pict4.jpeg" alt=""></p> -->
-<p id="demo"></p>
+    <!-- <div id="demo">
+        <div class="panel"><img src="img/pict1.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict2.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict3.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict4.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict1.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict2.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict3.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict4.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict1.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict2.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict3.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict4.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict1.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict2.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict3.jpeg" alt=""></div>
+        <div class="panel"><img src="img/pict4.jpeg" alt=""></div>
+    </div> -->
+    <div id="demo"></div>
+    <!-- <p id="demo"></p> -->
 </body>
 </html>
