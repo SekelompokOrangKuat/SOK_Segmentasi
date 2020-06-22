@@ -8,5 +8,5 @@ a{text-decoration: none;}
 /* martin wolf */
 #navigation ul li a::after{content: ''; display: block; width: 0; height: 1px; background: white; transition: width .3s;}
 #navigation ul li a:hover::after{width: 100%;}
-#demo{margin: 0 auto;}
+#demo{width: 90%; margin: 0 auto;}
 #demo img{float: left; margin-left: 15px; margin-top: 15px;}
